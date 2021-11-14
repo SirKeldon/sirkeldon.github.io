@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lilith v1.4 - Yet another snake game</title>
+  <link rel="stylesheet" href="css/cabinet.css">
+  <!-- GFX inspired by Jhonny Gil based on this https://codepen.io/gilsjhonny/pen/xqjKzg -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="arcade-machine">
+      <div class="top">
+        lilith<br />v1.4
+        <div class="stripes"></div>
+      </div>
+      <div class="screen-container">
+        <div class="screen">
+          <div class="screen-display">
+            <div class="screen-display-top">
+              <div id="welcome_table" style="display: none">
+                This is Lilith. Yet another snake game.
+              </div>
+              <div id="score_table">
+                Level: <span id="level"></span>
+                - Points: <span id="points"></span>
+                - Apples: <span id="apples"></span>
+              </div>
+            </div>
+            <canvas id="game"></canvas>
+            <div class="screen-display-top"></div>
+          </div>
+        </div>
+      </div>
+      <div class="board">
+        <div class="button button-up"></div>
+        <div class="button button-down"></div>
+        <div class="button button-left"></div>
+        <div class="button button-right"></div>
+        <div class="button button-a"></div>
+        <div class="button button-b"></div>
+        <div class="button button-c"></div>
+      </div>
+      <div class="bottom">
+        <div class="stripes"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="module" src="lib/constants.js"></script>
+<script type="module" src="lib/snake.js"></script>
+<script type="module" src="lib/drawer.js"></script>
+
+</html>
