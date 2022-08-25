@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script defer src="bundle.js"></script><link href="css/mystyles.css" rel="stylesheet"></head>
+    <body>
+        <div class="container">
+            <div class="columns">
+                <div class="column is-two-thirds">
+                    <section class="section">
+                        <h1 class="title main">square42</h1>
+                        <h2 class="subtitle">
+                            Yet another game of life. Now with analytics!
+                        </h2>
+                    </section>
+                    <section class="section">
+                        <nav class="level">
+                            <div class="level-item has-text-centered">
+                              <div>
+                                <p class="heading">Total Iterations</p>
+                                <p class="title" id="totalIterations">0</p>
+                              </div>
+                            </div>
+                            <div class="level-item has-text-centered">
+                              <div>
+                                <p class="heading">Current Survivors</p>
+                                <p class="title" id="currentSurvivors">0</p>
+                              </div>
+                            </div>
+                            <div class="level-item has-text-centered">
+                              <div>
+                                <p class="heading">Time Elapsed</p>
+                                <p class="title" id="timeElapsed">0s</p>
+                              </div>
+                            </div>
+                        </nav>
+                        <div id="game">
+                        </div>
+                        <div class="box" >
+                          <p class="title">Cells Breakdown</p>
+                          <table class="table is-fullwidth has-text-centered">
+                              <thead id="summaryGenerations">                                    
+                              </thead>
+                              <tbody id="summaryAmounts">
+                              </tbody>
+                            </table>
+                      </div>    
+                    </section>
+                </div>
+                  <div class="column">
+                    <section class="section">
+                        <div class="box" id="gamecontrol">
+                            <p class="title">Game Control</p>
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                      <input type="checkbox" id="canCross">
+                                      CanCross
+                                    </label>
+                                  </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox">
+                                        Speed
+                                        <input type="range" min="50" max="1500" step="50" class="slider has-output is-fullwidth" id="myRange">
+                                        <span id="currentSpeed"></span>ms
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <button class="button" id="play">Play/Pause</button>
+                                <button class="button" id="reset">Reset</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
+        </div>
+
+    </body>
+</html>
