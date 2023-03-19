@@ -31,7 +31,6 @@ github_username:  SirKeldon
 
 lsi: false
 safe: true
-source: "."
 incremental: false
 highlighter: rouge
 gist:
