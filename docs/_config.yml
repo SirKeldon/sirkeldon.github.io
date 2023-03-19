@@ -22,7 +22,7 @@ title: SirKeldon's github pages
 email: github@angelruiz.org
 description: >- # this means to ignore newlines until "baseurl:"
   Basic "jekyll" setup to notify/document some code stuff and other tech interests
-baseurl: "/docs" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://sirkeldon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 domain: "sirkeldon.github.io"
 github_username:  SirKeldon
